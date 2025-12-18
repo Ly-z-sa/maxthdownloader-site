@@ -2,7 +2,7 @@ class MediaDownloader {
     constructor() {
         this.currentPlatform = 'spotify';
         this.downloads = JSON.parse(localStorage.getItem('downloads') || '[]');
-        this.apiUrl = 'http://localhost:5000';
+        this.apiUrl = window.location.origin;
         this.init();
     }
 
